@@ -1,25 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const BlogService = (props) => {
-    return (
-        <div className="card bg-base-100 image-full w-96 shadow-xl">
-  <figure>
-    <img
-      src="./img/img_01"
-      alt="" />
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+const BlogService = () => {
+  return (
+    
+       <div className="card bg-neutral w-96 shadow-xl">
+        <figure className="px-10 pt-10">
+        <img src="/img/M_logo.jpg" alt="" className="rounded-xl" />
+        </figure>
+         <div className="card-body">
+         <h2 className="card-title">Card title!</h2>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+         <div className="card-actions justify-end">
+         <button className="btn btn-primary">Buy Now</button>
+       </div>
+     </div>
     </div>
-  </div>
-</div>
-    );
+  );
 };
-
-
 
 export default BlogService;

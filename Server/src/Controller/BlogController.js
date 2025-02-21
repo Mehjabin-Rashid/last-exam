@@ -19,6 +19,7 @@ const UpdateBlog = async (req, res) => {
 
 
 const DeleteBlog = async (req, res) => {
-    let result = await deleteBlogService(req);
+    let result = await DeleteBlogService(req);
     return res.json(result);
 }
+

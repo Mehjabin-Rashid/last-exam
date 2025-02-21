@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const BlogController = require('../Controllers/BlogController');
-const ServiceController = require('../Controllers/serviceController');
-const UserController = require('../Controllers/userController');
-const TeamController = require('../Controllers/teamController');
-const AuthController = require('../Controllers/authController');
+const BlogController = require('../Controller/BlogController.js');
+const ServiceController = require('../Controller/ServiceController.js');
+const UserController = require('../Controller/UserController.js');
+const TeamController = require('../Controller/TeamController.js');
+const AuthController = require('../Controller/authController.js');
 
 // Users
 
@@ -14,15 +14,15 @@ router.get("/UserLogOut",AuthController,UserController.UserLogOut);
 
 // Blog
 
-router.post("/CreateBlog",BlogController.createBlog);
-router.get("/GetBlog",BlogController.GtBlog);
+router.post("/CreateBlog",BlogController.CreateBlog);
+router.get("/GetBlog",BlogController.GetBlog);
 router.put("/UpdateBlog",BlogController.UpdateBlog);
 router.delete("/DeleteBlog",BlogController.DeleteBlog);
 
 // Service
 
 router.post("/CreateBDServices",ServiceController.CreateBDServices);
-router.get("GetBDServices",ServiceController.GetBDService);
+router.get("/GetBDServices",ServiceController.GetBDService);
 router.put("/UpdateBDService",ServiceController.UpdateBDService);
 router.delete("/DeleteBDService",ServiceController.DeleteBDService);
 

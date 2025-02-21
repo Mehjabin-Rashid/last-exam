@@ -54,8 +54,7 @@ const Contact = () => {
     }
 
     return (
-        <div>
-            <div class="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-4xl bg-white font-[sans-serif]">
+            <div class="grid sm:grid-cols-2 items-start gap-[20px] p-4 mx-auto max-w-4xl bg-white font-[sans-serif]">
             <div>
                 <h1 class="text-gray-800 text-3xl font-extrabold">Let's Talk</h1>
                 <p class="text-sm text-gray-500 mt-4">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help.</p>
@@ -130,7 +129,6 @@ const Contact = () => {
                 <button type='button'
                     class="text-white bg-blue-500 hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6">Send</button>
             </form>
-        </div>
         </div>
     );
 };

@@ -10,9 +10,16 @@ const Blogpage = () => {
      
 
     return (
-        <div>
-            
-        </div>
+        <>
+        {/* Menubar */}
+        <Menubar />
+            {/* BlogService */}
+            <BlogService/>
+            {/* Footer */}
+            <Footer /> 
+        </>
+           
+        
     );
 };
 

@@ -9,7 +9,7 @@ const Menubar = () => {
                 <div className='grid grid-cols-12 gap-[30px]'>
                     <div className='col-span-4'>
                         <div className='logo'>
-                            <img className='w-[12px]' src='/img/M_logo.jpg' alt=''/>
+                            <img className='w-[12px]' src='' alt=''/>
                         </div>
                     </div>
                     <div className='col-span-8'>
